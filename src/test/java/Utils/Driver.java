@@ -14,7 +14,7 @@ public class Driver {
 
 	private static WebDriver driver ; 
 
-	//constructor
+	//constructors
 	private Driver (){}
 
 
