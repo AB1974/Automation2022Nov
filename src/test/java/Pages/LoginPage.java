@@ -6,17 +6,22 @@ import org.openqa.selenium.support.PageFactory;
 
 import Utils.Driver;
 
-public class LoginPage {
+public class LoginPage{
 
 	//constructor
-
 	public LoginPage() {
 		//we put this line to be able to use @FindBy annotation
 		PageFactory.initElements(Driver.getDriver(),this);
 
 	}
-	
-	@FindBy(xpath="//input[@class ='gLFyf gsfi']")
-	public WebElement googleSearch;
+
+	@FindBy(id="name")
+	public WebElement userName;
+
+	@FindBy(id="password")
+	public WebElement password;
+
+	@FindBy(id="login")
+	public WebElement login;
 
 }

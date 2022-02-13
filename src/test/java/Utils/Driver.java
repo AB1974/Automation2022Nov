@@ -14,9 +14,8 @@ public class Driver {
 
 	private static WebDriver driver ; 
 
-	//constructorss
+	//constructor
 	private Driver (){}
-
 
 	public static WebDriver getDriver() {
 
@@ -24,7 +23,7 @@ public class Driver {
 			
 			System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Selenium\\lib\\src\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(30,TimeUnit.MILLISECONDS);
+			driver.manage().timeouts().implicitlyWait(40,TimeUnit.MILLISECONDS);
 			driver.manage().window().maximize();
 
 		}

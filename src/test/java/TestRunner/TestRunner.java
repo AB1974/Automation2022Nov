@@ -15,9 +15,9 @@ import cucumber.api.junit.Cucumber;
 		features="src/test/resources",
 		glue={ "StepDefinitions"},
 		monochrome=true,
-		//dryRun=true
-		tags="@smoke1"
-		//wwww
+	//	dryRun=true,
+		tags="@parameterization"
+	
 
 
 		)
