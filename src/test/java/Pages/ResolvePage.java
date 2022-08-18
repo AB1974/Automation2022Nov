@@ -6,14 +6,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import Utils.Driver;
 
-public class Google {
+
+
+public class ResolvePage {
 	//constructor
-		public Google() {
+		public ResolvePage() {
 			//we put this line to be able to use @FindBy annotation
 			PageFactory.initElements(Driver.getDriver(),this);
 
 		}
 
 		@FindBy(xpath="//input[@class ='gLFyf gsfi']")
-		public WebElement googleSearch;
+		public WebElement search;
 }

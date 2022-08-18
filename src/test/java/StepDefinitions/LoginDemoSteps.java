@@ -1,7 +1,5 @@
 package StepDefinitions;
 
-import org.openqa.selenium.Keys;
-
 import Pages.LoginPage;
 import Utils.ConfigurationReader;
 import Utils.Driver;
@@ -13,6 +11,7 @@ import cucumber.api.java.en.When;
 public class LoginDemoSteps extends BaseClass{
 	
 	LoginPage loginPage = new LoginPage();
+	
 	
 	
 	@Given("Browser is open")

@@ -12,9 +12,12 @@ public class Driver {
 	// none of the class will be able to create another WebDriver Object and this will provide  thread safety 
 
 
+	
 	private static WebDriver driver ; 
 
 	//constructor
+	
+	
 	private Driver (){}
 
 	public static WebDriver getDriver() {
