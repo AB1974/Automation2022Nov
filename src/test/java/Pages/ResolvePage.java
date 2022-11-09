@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import Utils.Driver;
 
+import java.util.List;
 
 
 public class ResolvePage {
@@ -18,4 +19,16 @@ public class ResolvePage {
 
 		@FindBy(xpath="//input[@class ='gLFyf gsfi']")
 		public WebElement search;
+
+	@FindBy(id="table1")
+	public WebElement table;
+
+	@FindBy(xpath="(//table/thead)[1]")
+	public List<WebElement> allHeaders;
+
+	@FindBy(xpath="//table[@id='table1' ]/tbody/tr")
+	public List<WebElement> allRows;
+
+	@FindBy(xpath="//table[@id='table1']//tr/th")
+	public List<WebElement> allColumns;
 }

@@ -15,8 +15,8 @@ import cucumber.api.junit.Cucumber;
 		features="src/test/resources",
 		glue={ "StepDefinitions"},
 		monochrome=true,
-	//	dryRun=true,
-		tags="@parameterization"
+		//dryRun=true,
+		tags="@webtable"
 	
 
 

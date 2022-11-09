@@ -15,6 +15,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class GoogleSteps extends BaseClass{
 
@@ -36,7 +38,7 @@ public class GoogleSteps extends BaseClass{
 
 	@Then("User is navigated to search results")
 	public void user_is_navigated_to_search_results() throws InterruptedException {
-		Thread.sleep(2000);
+
 		Driver.getDriver().getPageSource().contains("Hello World");
 	}
 
